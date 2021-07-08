@@ -5,7 +5,7 @@ import Home from './pages/Home';
 // import Matchup from './pages/Matchup';
 // import Vote from './pages/Vote';
 // import NotFound from './pages/NotFound';
-
+import Header from './components/Header';
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
@@ -14,6 +14,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Header/>
     <Home/>
     </ApolloProvider>
   );

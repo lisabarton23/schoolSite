@@ -6,7 +6,7 @@
 // import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_NAME} from '../utils/queries';
-
+import photo from '../images/photo1.jpg'
 const Home = () => {
 const {loading, data} =useQuery(QUERY_NAME, {
     fetchPolicy:"no-cache"
@@ -16,6 +16,7 @@ const {loading, data} =useQuery(QUERY_NAME, {
 return (
 <>
 <h1>School Site</h1>
+<img src = {photo} alt =" students"/>
 
 
 
